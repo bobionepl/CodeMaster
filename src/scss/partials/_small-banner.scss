@@ -1,0 +1,62 @@
+@import "../variables";
+.small-banner{
+  height: 70vh;
+  width: 100%;
+  position: relative;
+  @include flexCenter;
+  box-sizing: border-box;
+
+    &:after{
+      width: 100%;
+      height: 100%;
+      display: block;
+      content: "";
+      position: absolute;
+      top:0;
+      left: 0;
+      background-size: cover;
+      background: linear-gradient(0deg, $color2 0%, $color1 100%);
+      opacity: 0.8;
+    }
+  img{
+    box-sizing: border-box;
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+  }
+
+
+
+
+
+}
+.small-banner h3,.tret {
+  color: white;
+  font-weight: lighter;
+  text-align: center;
+  z-index: 1;
+}
+
+.sec-header{
+  width: 100%;
+  height: 70vh;
+  @include flexCenter;
+  flex-direction: column;
+
+
+}
+
+h3 {
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .small-banner {
+    max-width: 100vw;
+  }
+}
